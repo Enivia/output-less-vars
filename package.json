@@ -1,0 +1,22 @@
+{
+  "name": "output-less-vars",
+  "version": "0.1.0",
+  "description": "output less variables",
+  "keywords": [
+    "less",
+    "variables"
+  ],
+  "main": "cli.js",
+  "bin": {
+    "output-less-vars": "cli.js"
+  },
+  "repository": "git@github.com:Enivia/output-less-vars.git",
+  "homepage": "https://github.com/Enivia/output-less-vars",
+  "author": "Enivia <aqingcc@iwellmass.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "less": "^4.1.3"
+  }
+}
