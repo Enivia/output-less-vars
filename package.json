@@ -1,6 +1,6 @@
 {
   "name": "output-less-vars",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "output less variables",
   "keywords": [
     "less",
@@ -15,7 +15,7 @@
   "author": "Enivia <aqingcc@iwellmass.com>",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4",
     "commander": "^9.4.0",
     "less": "^4.1.3"
   }

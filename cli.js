@@ -1,10 +1,10 @@
 #!/usr/bin/env node
+
 const { Command } = require("commander");
 const chalk = require("chalk");
 const less = require("less");
 const fs = require("fs");
 const path = require("path");
-const chalk = require("chalk");
 
 const selector = "OUTPUT_LESS_VARIABLES_SELECTOR";
 const program = new Command();
@@ -31,7 +31,11 @@ function toUpperCamelCase(name) {
  * @param {string} css
  */
 function cssToJson(css) {
-  const selectorStart = css.indexOf(selector) + selector.length + 1;
+  const selectorIndex = css.indexOf(selector);
+  if (selectorIndex == -1) {
+    return "{}";
+  }
+  const selectorStart = selectorIndex + selector.length + 1;
   const selectorEnd = css.lastIndexOf("}");
   const selectorContents = css.slice(selectorStart, selectorEnd).trim();
   const json = selectorContents.split(";").reduce((res, variable) => {
