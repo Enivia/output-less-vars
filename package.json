@@ -1,12 +1,12 @@
 {
   "name": "output-less-vars",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "output less variables",
   "keywords": [
     "less",
     "variables"
   ],
-  "main": "cli.js",
+  "main": "index.js",
   "bin": {
     "output-less-vars": "cli.js"
   },
